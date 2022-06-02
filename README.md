@@ -6,7 +6,5 @@ This project serves as a proof-of-concept for such a system. It uses a foam roll
 ## Image Parsing
 ## Motor Command Generation
 ## Cooperative Multitasking
-<br />
-![alt text](https://github.com/ctgillespie/StrawberryPicker/blob/main/TaskDiagram.PNG "Task Diagram")
-<br />
+![alt text](https://github.com/ctgillespie/StrawberryPicker/blob/main/TaskDiagram.PNG?raw=true "Task Diagram")
 ## Demonstration

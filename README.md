@@ -21,6 +21,6 @@ The xml file is then read into the Jupyter file _GenerateMotorCommands_ which, a
 ## Cooperative Multitasking
 At the highest level, the code onboard the Nucleo board runs cooperatively. After the initial set-up of writing the parameters to the motor board (as described in the Motor Driver section above), the multi-tasking part of the operation begins. There are two main tasks that run simultaneously. One reads the motor commands and the other writes to the motors. Since the Nucleo board has limited RAM, the motor commands are loaded in as a CSV which can be saved on the device memory. The read commands task reads a chunk of the file at a time and shares it with the write commands task. This way, the system will not get a memory error for larger drawings. The task diagram for this operation is shown below.
 ![alt text](https://github.com/ctgillespie/StrawberryPicker/blob/main/Photos/TaskDiagram.PNG?raw=true "Task Diagram")
-## Demonstration
 The read task starts by opening the csv file with all the motor commands. It then will enter the parse motor commands state where it will parse one command at a time and add it to various shares for the write task to make use of until it reaches the end of the file. This functionality is shown in the state transition diagram below.
 ![alt text](https://github.com/ctgillespie/StrawberryPicker/blob/main/Photos/ReadCommandsSTD.PNG?raw=true "Read Commands State Transition Diagram")
+## Demonstration

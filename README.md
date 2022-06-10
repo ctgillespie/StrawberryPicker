@@ -27,4 +27,6 @@ At the highest level, the code onboard the Nucleo board runs cooperatively. Afte
 ![alt text](https://github.com/ctgillespie/StrawberryPicker/blob/main/Photos/TaskDiagram.PNG?raw=true "Task Diagram")
 The read task starts by opening the csv file with all the motor commands. It then will enter the parse motor commands state where it will parse one command at a time and add it to various shares for the write task to make use of until it reaches the end of the file. This functionality is shown in the state transition diagram below.
 ![alt text](https://github.com/ctgillespie/StrawberryPicker/blob/main/Photos/ReadCommandsSTD.PNG?raw=true "Read Commands State Transition Diagram")
+The write task is even simpler as all it does is read from the shares to get the current motor positions and write that to the motors using the motor driver class. The simple diagram is shown below.
+![alt text](https://github.com/ctgillespie/StrawberryPicker/blob/main/Photos/WriteCommandsSTD.PNG?raw=true "Write Commands State Transition Diagram")
 ## Demonstration

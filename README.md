@@ -21,7 +21,6 @@ The data is also verified by printing it to the console. This is also shown in t
 Lastly, a motor driver class was written to make the code more modular and object-oriented so that it can be made to integrate easily with other projects. A diagram of the class is shown.
 ![alt text](https://github.com/ctgillespie/StrawberryPicker/blob/main/Photos/MotorDriverClassDiagram.png?raw=true "Motor Driver Class Diagram") <br />
 [A video of the motors spinning can be found here](https://drive.google.com/file/d/1Qb-K9VdT-8qYitZVEhLl1PaHGWKx7_Ab/view?usp=sharing)
-![alt text](https://github.com/ctgillespie/StrawberryPicker/blob/main/Photos/motorsSpinning.mp4?raw=true "Motor Video")
 ## Image Parsing
 The functionality of the robot was expanded beyond the simple pick-and-place system described in the introduction into something that can “draw” pictures by placing the pins in certain places on the roller. In order to load these images onto the controller, the pictures are first drawn in *Inkscape*. In order to draw a picture in a way that the program can recognize, the circle tool is used. A red circle (or any color other than black) indicates a starting location for a pin and a black circle indicates a final location. The circles may be created using any size. An example image is shown below. <br />
 ![alt text](https://github.com/ctgillespie/StrawberryPicker/blob/main/Photos/SmileDrawing.PNG?raw=true "Smile Example")

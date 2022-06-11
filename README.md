@@ -48,6 +48,5 @@ The read task starts by opening the csv file with all the motor commands. It the
 The write task is even simpler as all it does is read from the shares to get the current motor positions and write that to the motors using the motor driver class. The simple diagram is shown below.
 ![alt text](https://github.com/ctgillespie/StrawberryPicker/blob/main/Photos/WriteCommandsSTD.PNG?raw=true "Write Commands State Transition Diagram")
 ## Demonstration
-Unfortunately, by the time all of the constituent parts outlined above were completed, there was very little time left for fine tuning. As such, each part works correctly on its own, but final integration has yet to be completed. Videos are attached below showing pieces of the functionality.
-[Stepper Motor Functionality](https://drive.google.com/file/d/11mOkt8mBNzFjziXhf8f7VUkxbfCxfbd6/view?usp=sharing) <br />
-[Servo Motor Functionality](https://drive.google.com/file/d/175cKjT5a9P4Z7A5BDPLM_jC2NQGgzC99/view?usp=sharing)
+Unfortunately, by the time all of the constituent parts outlined above were completed, there was very little time left for fine tuning. As such, each part works correctly on its own, but final integration has yet to be completed. Videos are attached below showing pieces of the functionality. <br />
+[Stepper Motor Functionality](https://drive.google.com/file/d/11mOkt8mBNzFjziXhf8f7VUkxbfCxfbd6/view?usp=sharing) [Servo Motor Functionality](https://drive.google.com/file/d/175cKjT5a9P4Z7A5BDPLM_jC2NQGgzC99/view?usp=sharing)
